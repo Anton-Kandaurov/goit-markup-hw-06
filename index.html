@@ -465,25 +465,39 @@
       </button>
        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
-          
+
+          <label  class="modal-p modal-p-name">Ім'я</label>
           <div class="modal-container">
-          <p class="modal-p">Ім'я</p>
           <input type="text" class="modal-imput" name="urer-name" required>
           <svg  width="18px" height="18px" class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
           </svg>
           </div>
 
+          <label  class="modal-p">Телефон</label>
           <div class="modal-container">
-          <p class="modal-p">Телефон</p>
           <input type="tel" class="modal-imput" name="urer-tel" required title="+38 096 111 11 11">
+          <svg  width="18px" height="18px" class="modal-icon">
+            <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+          </svg>
           </div>
 
+          <label  class="modal-p">Пошта</label>
           <div class="modal-container">
-          <p class="modal-p">Пошта</p>
           <input type="email" class="modal-imput" name="urer-email" required title="info@devstudio.com">
+          <svg  width="18px" height="18px" class="modal-icon">
+            <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
+          </svg>
           </div>
 
+          <label  class="modal-p">Коментар</label>
+          <textarea type="email" class="modal-imput-coment" name="urer-comment" required title="Коментар">Введіть текст</textarea>
+
+           <div> 
+           <input type="checkbox" name="policy" id="policy">
+           <label for="policy">Погоджуюся з розсилкою та приймаю</label>
+            <a class="modal-policy-a" href="">Умови договору</a>
+           </div>
           <button type="submit">Відправити</button>
         </form>
     </div>

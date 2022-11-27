@@ -722,6 +722,7 @@ a{
     letter-spacing: 0.03em;
     color: var(--title-N3-text-color);
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .modal-imput{
@@ -729,13 +730,24 @@ a{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
-    margin-top: 4px;
     position: relative;
+    padding-left: 42px;
+}
+
+.modal-imput:focus{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+.modal-imput:focus + .modal-icon{
+    fill: var(--accent-color);
 }
 
 .modal-container{
-    margin-top: 10px;
+    margin-top: 4px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .modal-p{
@@ -748,9 +760,40 @@ a{
 
 .modal-icon{
     position: absolute;
-    top: 37px;
+    bottom: 11px;
     left: 12px;
 }
+
+.modal-imput-coment{
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--title-N2-text-color);
+    padding: 12px;
+}
+
+.modal-imput-coment:focus{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.modal-policy-a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7142;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
 
 /*-----------------------------------*/
 /*----------partfolio.html-----------*/
