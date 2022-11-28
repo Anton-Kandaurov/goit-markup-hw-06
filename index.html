@@ -414,6 +414,7 @@
             <li class="foot-con-li-tel"><a href="tel:+380961111111" class="footer-nav-contact">+38 096 111 11 11</a></li>
         </ul>
         </address>
+        <!----------------icons------------------>
           </div>
           <div class="foot-icon">
         <h3 class="foot-title-svg">приєднуйтесь</h3>
@@ -449,10 +450,23 @@
               </svg>
             </a>
           </li>
+           </div>
+          <!----------------------Spam------------------->
+
+          <div class="spam">
+            <h2 class="spam-title">Підпишіться на розсилку</h2>
+            <form class="spam-form">
+            <input type="email" class="spam-input" required placeholder="E-mail" name="user-email-spam" title="info@devstudio.com">
+            <button class="spam-btn"><span class="spam-btn-text">Підписатися</span> 
+              <svg class="spam-icon-send">
+                <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            </form>
+          </div>
         
         </ul>
           </div>
-      </div>
     </footer>
     <!-----------------------------Modal------------------------->
 
@@ -493,12 +507,11 @@
           <label  class="modal-p">Коментар</label>
           <textarea type="email" class="modal-imput-coment" name="urer-comment" required title="Коментар">Введіть текст</textarea>
 
-           <div> 
-           <input type="checkbox" name="policy" id="policy">
-           <label for="policy">Погоджуюся з розсилкою та приймаю</label>
-            <a class="modal-policy-a" href="">Умови договору</a>
-           </div>
-          <button type="submit">Відправити</button>
+           <div class="modal-policy-check">
+           <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+           <label for="policy" class="check-text">Погоджуюся з розсилкою та приймаю <a class="modal-policy-a" href="">Умови договору</a></label>
+            </div>
+          <button type="submit" class="modal-send">Відправити</button>
         </form>
     </div>
     </div>

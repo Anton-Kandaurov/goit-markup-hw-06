@@ -58,6 +58,20 @@ img{
 button{
     cursor: pointer;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* --------------index.html--------------------*/
 .body {
   color: var(--title-text-color);
@@ -555,13 +569,13 @@ a{
 
 .foot-con{
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
 .footer-addres{
     text-decoration: none;
     list-style-type: none;
+    margin-right: 70px;
 }
 
 .footer-addres-map{
@@ -664,6 +678,82 @@ a{
     fill: var(--basic-title-color);
 }
 
+.spam-title{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-title-color);
+    font-family: 'Roboto';
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.spam-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    padding-left: 16px;
+}
+
+.spam-input::placeholder{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+}
+
+.spam{
+    justify-content: center;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.spam-btn{
+    width: 200px;
+    height: 50px;
+    color: var(--basic-title-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.spam-btn-text{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.25;
+    display: flex;
+    padding-right: auto;
+    padding-left: auto;
+    letter-spacing: 0.06em;
+}
+
+.spam-icon-send{
+    fill: var(--basic-title-color);
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.spam-form{
+    display: flex;
+}
+
 
 /*------------------modal--------------------*/
 
@@ -734,7 +824,8 @@ a{
     padding-left: 42px;
 }
 
-.modal-imput:focus{
+.modal-imput:focus,
+.modal-imput:checked{
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
@@ -779,6 +870,7 @@ a{
     padding: 12px;
 }
 
+.modal-imput-coment:checked,
 .modal-imput-coment:focus{
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -792,8 +884,68 @@ a{
     letter-spacing: 0.03em;
     color: var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
+    align-items: baseline;
 }
 
+.check-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7142;
+    letter-spacing: 0.03em;
+    color: var(--title-N2-text-color);
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.check-text::before{
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-N3-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.modal-check{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal-check:checked + .check-text::before{
+    border: none;
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-color: var(--accent-color);
+    background-position: center;
+}
+
+.modal-policy-check{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modal-send{
+    width: 200px;
+    height: 50px;
+    color: var(--basic-title-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /*-----------------------------------*/
 /*----------partfolio.html-----------*/
