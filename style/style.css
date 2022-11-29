@@ -715,7 +715,7 @@ a{
 .spam-btn{
     width: 200px;
     height: 50px;
-    color: var(--basic-title-color);
+    color: rgba(255, 255, 255, 0.6);;
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
@@ -885,6 +885,7 @@ a{
     color: var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
     align-items: baseline;
+    margin-left: 5px;
 }
 
 .check-text{
@@ -897,6 +898,7 @@ a{
     align-items: baseline;
     margin-right: auto;
     margin-left: auto;
+    justify-content: center;
 }
 
 .check-text::before{
@@ -906,6 +908,8 @@ a{
     border: 2px solid var(--title-N3-text-color);
     border-radius: 2px;
     margin-right: 7px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .modal-check{
@@ -924,6 +928,8 @@ a{
 .modal-policy-check{
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .modal-send{
